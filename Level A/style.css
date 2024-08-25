@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #f4f4f4; /* Changed to Light Gray background */
+    overflow-x: hidden;
+}
+
+h1, h2, h4, h6, p {
+    color: #333; /* Changed to Dark Gray text */
+}
+
+.section-p1 {
+    padding: 40px 80px;
+    background-color: #e8e8e8; /* Changed to Light Gray background for sections */
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px; 
+    background: #444; /* Changed to Dark Gray for header background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 14px; 
+    font-weight: 600;
+    color: #e8e8e8; /* Changed to Light Gray for navbar links */
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #ff6347; /* Changed to Tomato color for hover and active state */
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ff6347; /* Changed to Tomato underline for hover and active state */
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero {
+    background-image: url(assets/images/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h1 {
+    color: #ff6347; /* Changed to Tomato for hero title */
+}
+
+.btn {
+    position: relative;
+    border: none;
+    transition: all 0.5s;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 90px;
+    background-color: #444; /* Changed to Dark Gray for buttons */
+    color: #e8e8e8; /* Changed to Light Gray text for buttons */
+}
+
+.btn:hover {
+    background: #ff6347; /* Changed to Tomato for button hover */
+    box-shadow: 0 0 5px #ff6347, 0 0 25px #ff6347, 0 0 50px #ff6347, 0 0 200px #ff6347;
+    color: #333; /* Changed to Dark Gray text for button hover */
+}
+
+#feature .Nike_Ronaldo, 
+#feature .Messi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d3d3d3; /* Changed to Light Gray for feature sections */
+}
+
+#feature .Nike_Ronaldo h6, 
+#feature .Messi h6 {
+    padding: 8px 9px 9px 9px;
+    height: 19px;
+    color: #333; /* Changed to Dark Gray for Nike and Messi headings */
+}
+
+.hover-effect {
+    transition: transform 0.3s;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+}
+
+.shoe-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 450px;
+    margin-left: 40px;
+}
+
+.shoe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.shoe-item img {
+    width: 150px;
+    margin: 10px;
+}
+
+.shoe-item p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #444; /* Changed to Dark Gray for shoe item descriptions */
+}
+
+.shoe-item:hover {
+    transform: scale(1.05);
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#featured-products {
+    padding: 40px 80px;
+    background-color: #e8e8e8; /* Changed to Light Gray */
+    text-align: center;
+}
+
+#featured-products h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Changed to Dark Gray */
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 22%;
+    margin: 20px 1%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-item p {
+    font-size: 18px;
+    color: #333; /* Changed to Dark Gray for product descriptions */
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #333; /* Changed to Dark Gray for footer background */
+    color: #e8e8e8; /* Changed to Light Gray for footer text */
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.footer-col h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ff6347; /* Changed to Tomato for footer headings */
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #e8e8e8;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff6347; /* Changed to Tomato for footer link hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.parallax-layer {
+    position: relative;
+    will-change: transform;
+}

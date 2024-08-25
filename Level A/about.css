@@ -1,0 +1,87 @@
+/* General header styling */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px; /* Adjusted for a balanced look */
+    background-color: #3c3c3c; /* Dark grey background */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+/* Logo styling */
+#header h1 {
+    font-family: 'Spartan', sans-serif;
+    color: #8b0000; /* Dark red for the logo */
+    font-size: 36px;
+}
+
+/* Navbar styling */
+#navbar {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Adjusted for more spacing */
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ddd; /* Light grey for default links */
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #f15a22; /* Orange for hover and active state */
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: #f15a22; /* Orange underline for hover and active state */
+    position: absolute;
+    bottom: -4px;
+    left: 25%;
+}
+
+/* Cart icon */
+#navbar li a i {
+    font-size: 18px;
+    color: #ddd;
+    transition: 0.3s ease;
+}
+
+#navbar li a i:hover {
+    color: #f15a22; /* Orange on hover */
+}
+
+#about-us {
+    padding: 60px 80px;
+    background-color: #f4f4f4; /* Light grey background for the about section */
+}
+
+.about-section {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3c3c3c; /* Dark grey for the title */
+    font-family: 'Spartan', sans-serif;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555; /* Medium grey for the text */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
